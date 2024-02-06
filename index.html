@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="/js/index.js"></script>
+</head>
+<body id="home-body">
+  <ul id="nav-bar">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="artists/eminem/eminem.html">Eminem</a></li>
+    <li><a href="artists/tupac/tupac.html">Tupac</a></li>
+    <li><a href="artists/tvgirl/tvgirl.html">TV Girl</a></li>
+    <li><a href="artists/thesmiths/thesmiths.html">The Smiths</a></li>
+    <li id="theme-button" onclick="changeTheme()"><span class="material-symbols-outlined">
+      contrast
+      </span></li>
+  </ul>
+  <div class="header-container">
+    <div class="header-content">
+      <h1>A website about music lyrics</h1>
+      <p>Here you can find music lyrics</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="side-panel">
+      
+    </div>
+    <div class="artists-container">
+      <div class="artist-card" id="first-artist-card">
+        <a href="/artists/eminem/eminem.html">
+          <img src="/images/eminem.jpg" alt="Eminem">
+          <div class="card-title-container">
+            <div class="card-title">
+              Eminem
+            </div>
+          </div>      
+        </a>
+      </div>
+      <div class="artist-card" id="second-artist-card">
+        <a href="/artists/tupac/tupac.html">
+          <img src="/images/tupac.jpg" alt="Tupac">
+          <div class="card-title-container">
+            <div class="card-title">
+              Tupac
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="artist-card" id="third-artist-card">
+        <a href="/artists/tvgirl/tvgirl.html">
+          <img src="/images/tvgirll.jpg" alt="TV Girl">
+          <div class="card-title-container">
+            <div class="card-title">
+              TV Girl
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="artist-card" id="fourth-artist-card">
+        <a href="/artists/thesmiths/thesmiths.html">
+          <img src="/images/thesmiths.jpg" alt="The Smiths">
+          <div class="card-title-container">
+            <div class="card-title">
+              The Smiths
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="side-panel">
+
+    </div>
+  </div>
+</body>
+</html>

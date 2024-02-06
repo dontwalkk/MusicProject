@@ -1,0 +1,54 @@
+/* The Smiths */
+
+#thesmiths {
+  background-color: #d89b6c;
+}
+
+#thesmiths ul {
+  background-color: rgb(150, 104, 19);
+}
+
+#thesmiths a:hover {
+  background-color: #d89b6c;
+}
+
+#thesmiths .active {
+  background-color: #d89b6c;
+}
+
+#thesmiths .songs-title {
+  color: white;
+}
+
+#thesmiths .artist-bio {
+  background-color: rgb(226, 210, 176);
+  color: rgb(0, 0, 0);
+  border-color: rgb(153, 140, 112);
+}
+
+/* The Smiths b.t.t.o.h */
+
+#thesmiths-bttoh {
+  background-color: #fda172;
+}
+
+#thesmiths-bttoh .lyrics {
+  background-color: #fdae87;
+  color: white;
+}
+
+#thesmiths-bttoh .lyrics-title {
+  color: white;
+}
+
+#thesmiths-bttoh ul {
+  background-color: #d6874a;
+}
+
+#thesmiths-bttoh a:hover {
+  background-color: #fda172;
+}
+
+#thesmiths-bttoh .active {
+  background-color: #fda172;
+}

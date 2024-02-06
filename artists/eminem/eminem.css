@@ -1,0 +1,107 @@
+/*Eminem*/
+
+#eminem {
+  background-color: var(--eminem-color);
+}
+
+#eminem ul {
+  background-color: black;
+}
+
+#eminem a:hover {
+  background-color: var(--eminem-color);
+}
+
+#eminem .active {
+  background-color: var(--eminem-color);
+}
+
+#eminem .songs-title {
+  color: white;
+}
+
+#eminem .artist-bio {
+  background-color: black;
+  color: white;
+}
+
+/*Godzilla*/
+
+#eminem-godzilla {
+  background-color: rgb(97, 0, 0);
+}
+
+#eminem-godzilla a:hover {
+  background-color: rgb(97, 0, 0);
+}
+
+#eminem-godzilla ul {
+ background-color: rgb(56, 0, 0);
+}
+
+
+#eminem-godzilla .active {
+  background-color: rgb(97, 0, 0);
+}
+
+#eminem-godzilla .lyrics {
+  background-color: rgb(255, 88, 88);
+  color: white;
+}
+
+#eminem-godzilla .lyrics-title {
+  color: white;
+}
+
+/*Shake that*/
+
+#eminem-shakethat {
+  background-color: rgb(207, 114, 0);
+}
+
+#eminem-shakethat ul {
+  background-color: rgb(138, 76, 0);
+}
+
+#eminem-shakethat a:hover {
+  background-color: rgb(207, 114, 0);
+}
+
+#eminem-shakethat .active {
+  background-color: rgb(207, 114, 0);
+}
+
+#eminem-shakethat .lyrics {
+  background-color: rgb(231, 153, 58);
+  color: white;
+}
+
+#eminem-shakethat .lyrics-title {
+  color: white;
+}
+
+/* Lose Yourself */
+
+#eminem-loseyourself {
+  background-color: black;
+}
+
+#eminem-loseyourself ul {
+  background-color: rgb(204, 204, 0);
+}
+
+#eminem-loseyourself a:hover {
+  background-color: black;
+}
+
+#eminem-loseyourself .active {
+  background-color: black;
+}
+
+#eminem-loseyourself .lyrics {
+  background-color: rgb(204, 204, 0);
+}
+
+#eminem-loseyourself .lyrics-title {
+  color: white;
+}

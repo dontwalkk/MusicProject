@@ -1,0 +1,315 @@
+:root {
+  --primary-color: #FFDAB9;
+  --eminem-color: rgb(48, 48, 48);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  background-color: #68546d;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #1f0e22;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  float: left;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  padding: 20.5px;
+  display: block;
+  font-size: 18px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+li .active {
+  background-color: #45224b;
+}
+
+li a:hover {
+  background-color: #45224b;
+}
+
+#theme-button {
+  float: right;
+  color: white;
+  cursor: pointer;
+  padding: 17px;
+}
+
+#theme-button:hover {
+  background-color: #45224b;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  background-color: #45224b;
+  align-items: center;
+  padding: 40px;
+}
+
+.header-content {
+  display: flex;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  background-color: #68546d;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  color: white;
+}
+
+.header-content h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  margin: 0;
+}
+
+.artists-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.artist-card {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  transition: transform 0.5s;
+}
+
+.artist-card:hover {
+  transform: scale(1.1);
+}
+
+.artist-card img {
+  width: 300px;
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+}
+
+@keyframes summon-right {
+  from {left: 200%}
+  to {left: 0;}
+}
+
+@keyframes summon-left {
+  from {right: 200%}
+  to {right: 0;}
+}
+
+#first-artist-card {
+  animation-name: summon-left;
+  animation-duration: 0.5s;
+}
+
+#second-artist-card {
+  animation-name: summon-right;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#third-artist-card {
+  animation-name: summon-left;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+#fourth-artist-card {
+  animation-name: summon-right;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+.songs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.song-card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  transition: transform 0.5s;
+}
+
+.song-card img {
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  width: 250px;
+}
+
+@keyframes eminem-summon-left {
+  from {right: 100%;}
+  to {right: 0;}
+}
+
+@keyframes eminem-summon-top {
+  from {bottom: 100%;}
+  to {bottom: 0;}
+}
+
+@keyframes eminem-summon-right {
+  from {left: 100%;}
+  to {left: 0;}
+}
+
+#first-eminem-animation {
+  animation-name: eminem-summon-left;
+  animation-duration: 0.5s;
+}
+
+#second-eminem-animation {
+  animation-name: eminem-summon-top;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+#third-eminem-animation {
+  animation-name: eminem-summon-right;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.song-card:hover {
+  transform: scale(1.1);
+}
+
+.card-title-container {
+  width: 250px;
+  height: 250px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  background-color: #29292977;
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  transition: all 0.3s;
+}
+
+.artist-card .card-title-container {
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+}
+
+.card-title {
+  width: 250px;
+  font-size: 34px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.artist-card .card-title {
+  width: 300px;
+}
+
+.song-card:hover .card-title-container, .artist-card:hover .card-title-container {
+  opacity: 1;
+}
+
+.songs-title {
+  text-align: center;
+  color: #81664e;
+  margin: 30px 0;
+  font-size: 36px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.side-panel {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  gap: 30px;
+}
+
+.song-cards-container {
+  margin: 102px auto 0;
+  width: fit-content;
+}
+
+.video-container {
+  margin: 102px auto 0;
+  width: fit-content;
+}
+
+.video-container iframe {
+  border-radius: 10px;
+  border: #ffead7 2px solid;
+}
+
+.content-container {
+  width: 44%;
+  min-width: 500px;
+}
+
+.lyrics-title {
+  text-align: center;
+}
+
+.lyrics-title h2 {
+  margin: 30px 0;
+  font-size: 36px;
+}
+
+div.lyrics {
+  text-align: center;
+  background-color: #e9bd97;
+  border: #ffead7 2px solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.artist-bio {
+  margin: 5px;
+  padding: 8px 2px 8px 16px;
+  border-left: 10px solid #29292977;
+  border-radius: 4px;
+  background-color: #ddc3ac;
+  color: #81664e;
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: 530px;
+  margin: 40px auto 0;
+  margin-bottom: 20px;
+}

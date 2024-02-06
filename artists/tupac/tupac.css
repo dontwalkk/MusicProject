@@ -1,0 +1,108 @@
+/*Tupac*/
+
+#tupac {
+  background-color: #420d09;
+}
+
+#tupac ul {
+  background-color: #270906;
+}
+
+#tupac .active {
+  background-color: #420d09;
+}
+
+#tupac a:hover {
+  background-color: #420d09;
+}
+
+#tupac .songs-title {
+  color: white;
+}
+
+#tupac .artist-bio {
+  background-color: #270906;
+  color: white;
+  border-color: #1b0503;
+}
+
+/*hit em up*/
+
+#tupac-hitemup {
+ background-color: #DBA800; 
+}
+
+#tupac-hitemup .lyrics {
+  background-color: #be9200;
+  color: white;
+}
+
+#tupac-hitemup .lyrics-title {
+  color: white;
+}
+
+#tupac-hitemup ul {
+  background-color: #997d22;
+}
+
+#tupac-hitemup .active {
+  background-color: #DBA800;
+}
+
+#tupac-hitemup a:hover {
+  background-color: #DBA800;
+}
+
+/* All eyez on me */
+
+#tupac-aeom {
+  background-color: #a65b46;
+}
+
+#tupac-aeom .lyrics {
+  background-color: #ff9274;
+  color: white;
+}
+
+#tupac-aeom .lyrics-title {
+  color: white;
+}
+
+#tupac-aeom ul {
+  background-color: #5c2c1e;
+}
+
+#tupac-aeom a:hover {
+  background-color: #a65b46;
+}
+
+#tupac-aeom .active {
+  background-color: #a65b46;
+}
+
+/* Keep Ya Head up */
+
+#tupac-kyhu {
+  background-color: #14141f;
+}
+
+#tupac-kyhu .lyrics {
+  background-color: #50505f;
+  color: white;
+}
+
+#tupac-kyhu .lyrics-title {
+  color: white;
+}
+
+#tupac-kyhu ul {
+  background-color: #0a0a10;
+}
+
+#tupac-kyhu a:hover {
+  background-color: #14141f;
+}
+
+#tupac-kyhu .active {
+  background-color: #14141f;
+}

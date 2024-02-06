@@ -1,0 +1,86 @@
+/* tv girl */
+
+#tvgirl {
+  background-color: #E75480;
+  background-image: linear-gradient(to right, #E75480, rgb(3, 3, 56));
+}
+
+#tvgirl .artist-bio {
+  background-color: white;
+  color: black;
+  border-color: rgb(86, 86, 136);
+}
+
+#tvgirl .songs-title {
+  color: white;
+}
+
+#tvgirl ul {
+  background-color: #802e46;
+  background-image: linear-gradient(to right, #802e46, rgb(3, 3, 56));
+}
+
+#tvgirl .active {
+  background-color: #E75480;
+}
+
+ul a:hover {
+  background-color: #E75480;
+}
+
+/*cotw*/
+
+#tvgirl-cotw {
+  background-color: rgb(3, 3, 56);
+  background-image: linear-gradient(to right, rgb(3, 3, 56),#E75480 );
+}
+
+#tvgirl-cotw .lyrics {
+  background-color: rgb(79, 79, 184);
+  color: white;
+}
+
+#tvgirl-cotw .lyrics-title {
+  color: white;
+}
+
+#tvgirl-cotw ul {
+  background-color: rgb(9, 9, 39);
+  background-image: linear-gradient(to right, rgb(2, 2, 43),#bd4166 );
+}
+
+#tvgirl-cotw .active {
+  background-color: rgb(3, 3, 56);
+}
+
+#tvgirl-cotw a:hover {
+  background-color: rgb(3, 3, 56);
+}
+
+/* Lovers Rock */
+
+#tvgirl-loversrock {
+  background-color: #d54746;
+}
+
+#tvgirl-loversrock .lyrics {
+  background-color: #ff7777;
+  color: white;
+}
+
+#tvgirl-loversrock .lyrics-title {
+  color: white;
+}
+
+#tvgirl-loversrock ul {
+  background-color: #4e0e0e;
+}
+
+#tvgirl-loversrock .active {
+  background-color: #d54746;
+}
+
+#tvgirl-loversrock a:hover {
+  background-color: #d54746;
+}
+  
