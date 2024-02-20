@@ -89,6 +89,7 @@ li a:hover {
   align-items: center;
   padding: 40px 0;
   flex-wrap: wrap;
+  max-width: 650px;
 }
 
 .artist-card {
@@ -152,6 +153,7 @@ li a:hover {
   flex-direction: row;
   gap: 40px;
   flex-wrap: wrap;
+  max-width: 850px;
 }
 
 .song-card {
@@ -299,6 +301,7 @@ div.lyrics {
   border: #ffead7 2px solid;
   border-radius: 10px;
   margin-bottom: 20px;
+  padding: 30px;
 }
 
 .artist-bio {
