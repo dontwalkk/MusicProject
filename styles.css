@@ -1,6 +1,7 @@
 :root {
   --primary-color: #FFDAB9;
   --eminem-color: rgb(48, 48, 48);
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -97,6 +98,7 @@ li a:hover {
   width: 300px;
   height: 250px;
   transition: transform 0.5s;
+  opacity: 0;
 }
 
 .artist-card:hover {
@@ -112,15 +114,15 @@ li a:hover {
 
 @keyframes summon-right {
   from {left: 200%}
-  to {left: 0;}
+  to {left: 0; opacity: 1;}
 }
 
 @keyframes summon-left {
   from {right: 200%}
-  to {right: 0;}
+  to {right: 0; opacity: 1;}
 }
 
-#first-artist-card {
+/* #first-artist-card {
   animation-name: summon-left;
   animation-duration: 0.5s;
 }
@@ -144,7 +146,7 @@ li a:hover {
   animation-duration: 0.5s;
   animation-delay: 1.5s;
   animation-fill-mode: both;
-}
+} */
 
 .songs-container {
   display: flex;
@@ -161,6 +163,7 @@ li a:hover {
   width: 250px;
   height: 250px;
   transition: transform 0.5s;
+  opacity: 0;
 }
 
 .song-card img {
