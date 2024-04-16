@@ -1,6 +1,3 @@
-import {homePageArtists, eminemSongs} from "./data.js";
-console.log("🚀 ~ eminemSongs:", eminemSongs)
-
 function htmlGeneratorForArtists(artistsArr) {
   let html = '';
   for(let artist of artistsArr) {

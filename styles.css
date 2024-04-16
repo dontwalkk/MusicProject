@@ -122,32 +122,6 @@ li a:hover {
   to {right: 0; opacity: 1;}
 }
 
-/* #first-artist-card {
-  animation-name: summon-left;
-  animation-duration: 0.5s;
-}
-
-#second-artist-card {
-  animation-name: summon-right;
-  animation-duration: 0.5s;
-  animation-delay: 0.5s;
-  animation-fill-mode: both;
-}
-
-#third-artist-card {
-  animation-name: summon-left;
-  animation-duration: 0.5s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-}
-
-#fourth-artist-card {
-  animation-name: summon-right;
-  animation-duration: 0.5s;
-  animation-delay: 1.5s;
-  animation-fill-mode: both;
-} */
-
 .songs-container {
   display: flex;
   align-items: center;
