@@ -16,11 +16,9 @@ function htmlGeneratorForArtists(artistsArr) {
   return html;
 }
 
-// document.querySelector('.artists-container').innerHTML = htmlGeneratorForArtists(homePageArtists);
 
 function createCardsFromArray(data, sectionKeyword) {
   let container = document.querySelector(`.${sectionKeyword}s-container`)
-  // let container = document.querySelector(`.songs-container`)
   let delay = 0.5
   let animationType = true
   const animLeft = 'summon-left'

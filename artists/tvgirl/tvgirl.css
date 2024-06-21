@@ -44,7 +44,7 @@ ul a:hover {
   color: white;
 }
 
-#tvgirl-cotw ul {
+#tvgirl-cotw ul, .artist-button {
   background-color: rgb(9, 9, 39);
   background-image: linear-gradient(to right, rgb(2, 2, 43),#bd4166 );
 }
@@ -72,7 +72,7 @@ ul a:hover {
   color: white;
 }
 
-#tvgirl-loversrock ul {
+#tvgirl-loversrock ul, .artist-button {
   background-color: #4e0e0e;
 }
 

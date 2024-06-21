@@ -1,7 +1,6 @@
 :root {
   --primary-color: #FFDAB9;
   --eminem-color: rgb(48, 48, 48);
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -132,15 +131,18 @@ li a:hover {
   max-width: 850px;
 }
 
-.song-card {
+.song-card, .song-page-song-card {
   position: relative;
   width: 250px;
   height: 250px;
   transition: transform 0.5s;
+}
+
+.song-card {
   opacity: 0;
 }
 
-.song-card img {
+.song-card img, .song-page-song-card img {
   border-radius: 10px;
   border: 2px solid #ffffff;
   width: 250px;
@@ -240,12 +242,38 @@ li a:hover {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
-  gap: 30px;
+  gap: 28px;
+  padding-top: 102px;
+}
+
+.artist-button {
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  color: white;
+  text-align: center;
+}
+
+.artist-button a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 5px;
+  border-radius: 10px;
+}
+
+.artist-button h3 {
+  margin: 0;
+  font-size: 24px;
 }
 
 .song-cards-container {
-  margin: 102px auto 0;
   width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .video-container {

@@ -41,7 +41,7 @@
   color: white;
 }
 
-#tupac-hitemup ul {
+#tupac-hitemup ul, .artist-button {
   background-color: #997d22;
 }
 
@@ -68,7 +68,7 @@
   color: white;
 }
 
-#tupac-aeom ul {
+#tupac-aeom ul, .artist-button {
   background-color: #5c2c1e;
 }
 
@@ -95,7 +95,7 @@
   color: white;
 }
 
-#tupac-kyhu ul {
+#tupac-kyhu ul, .artist-button {
   background-color: #0a0a10;
 }
 
