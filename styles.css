@@ -57,19 +57,6 @@ li div:hover {
   top: 0;
 }
 
-/* .backgroundImage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.backgroundImage img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-} */
-
 .modal-wrapper {
   position: absolute;
   transform: translate(50%, -50%);
@@ -77,7 +64,6 @@ li div:hover {
   right: 50%;
   width: 500px;
   height: 316px;
-  /* background-color: white; */
   background-image: url(/images/purpleBackground.jpg);
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
