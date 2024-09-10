@@ -59,24 +59,6 @@ function keyPressHandler(event) {
     yVelocity = 0;
     directionChanged = true;
   }
-  // switch(event.code) {
-  //     case 'KeyW':
-  //         xVelocity = 0
-  //         yVelocity = -unitSize
-  //         break;
-  //     case 'KeyA':
-  //         xVelocity = -unitSize
-  //         yVelocity = 0
-  //         break;
-  //     case 'KeyS':
-  //         xVelocity = 0
-  //         yVelocity = unitSize
-  //         break;
-  //     case 'KeyD':
-  //         xVelocity = unitSize
-  //         yVelocity = 0
-  //         break;
-  // }
 }
 function drawBoardGrid() {
   ctx.fillStyle = "white";
