@@ -1,23 +1,23 @@
 const homePageArtists = [
   {
     name: "Eminem",
-    url: "/artists/eminem/eminem.html",
-    image: "/images/eminem.jpg",
+    url: "artists/eminem/eminem.html",
+    image: "images/eminem.jpg",
   },
   {
     name: "Tupac",
-    url: "/artists/tupac/tupac.html",
-    image: "/images/tupac.jpg",
+    url: "artists/tupac/tupac.html",
+    image: "images/tupac.jpg",
   },
   {
     name: "TV Girl",
-    url: "/artists/tvgirl/tvgirl.html",
-    image: "/images/tvgirll.jpg",
+    url: "artists/tvgirl/tvgirl.html",
+    image: "images/tvgirll.jpg",
   },
   {
     name: "The Smiths",
-    url: "/artists/thesmiths/thesmiths.html",
-    image: "/images/thesmiths.jpg",
+    url: "artists/thesmiths/thesmiths.html",
+    image: "images/thesmiths.jpg",
   },
 ];
 
