@@ -1,0 +1,15 @@
+#home-body  {
+    background-color: darkgray;
+}
+
+#home-body ul {
+    background-color: gray;
+}
+
+#home-body .active {
+    background-color: darkgray;
+}
+
+ul a:hover {
+    background-color: darkgray;
+  }
