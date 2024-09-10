@@ -64,7 +64,7 @@ li div:hover {
   right: 50%;
   width: 500px;
   height: 316px;
-  background-image: url(/images/purpleBackground.jpg);
+  background-image: url(images/purpleBackground.jpg); /*FIX*/
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
