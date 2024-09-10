@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="snake.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <ul id="nav-bar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../artists/eminem/eminem.html">Eminem</a></li>
+        <li><a href="../artists/tupac/tupac.html">Tupac</a></li>
+        <li><a href="../artists/tvgirl/tvgirl.html">TV Girl</a></li>
+        <li><a href="../artists/thesmiths/thesmiths.html">The Smiths</a></li>
+        <li id="theme-button" onclick="changeTheme()"> <!--TODO fix size-->
+          <span class="material-symbols-outlined">
+            contrast
+          </span>
+        </li>
+        <li id="controllerButton">
+          <a href="snake/snake.html">
+            <span class="material-symbols-outlined">
+              stadia_controller
+            </span>
+          </a>
+        </li>
+    
+        <li id="signInButton">
+          <div class="">Sign In</div>
+        </li>
+      </ul>
+    <div class="canvas-wrapper">
+        <div id="gameOver">
+            <p>
+                Game Over
+            </p>
+        </div>
+        <canvas id="snake" width="500" height="500">
+    
+        </canvas>
+    </div>
+
+    <div class="score">
+        <p>Score: <span id="liveScore"></span></p>
+    </div>
+
+    <button id="resetButton" role="button">
+        reset
+    </button>
+
+    <script src="snake.js"></script>
+</body>
+
+</html>
