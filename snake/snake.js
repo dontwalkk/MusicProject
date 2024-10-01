@@ -2,6 +2,7 @@ const canvas = document.getElementById("snake");
 
 const ctx = canvas.getContext("2d");
 let score = 0;
+let highScore = takeHighScoreFromCookie();
 let scoreElement = document.getElementById("liveScore");
 let resetButton = document.getElementById("resetButton");
 let gameOverElement = document.getElementById("gameOver");
@@ -30,13 +31,18 @@ addEventListener("keydown", keyPressHandler);
 let tick;
 nextTick(timeout);
 function nextTick(timeout = 150) {
-  tick = setTimeout(() => {
-    drawBoardGrid();
-    drawApple();
-    moveSnake();
-    directionChanged = false;
-    nextTick(timeout);
-  }, timeout);
+  isGameOver();
+  setHighScore();
+
+  if (!gameStop) {
+    tick = setTimeout(() => {
+      drawBoardGrid();
+      drawApple();
+      moveSnake();
+      directionChanged = false;
+      nextTick(timeout);
+    }, timeout);
+  }
 }
 function keyPressHandler(event) {
   if (event.code === "KeyW" && yVelocity != unitSize && !directionChanged) {
@@ -78,10 +84,10 @@ function drawBoardGrid() {
 function newApple() {
   apple.x = Math.floor((Math.random() * bordWidth) / unitSize) * unitSize;
   apple.y = Math.floor((Math.random() * bordHeight) / unitSize) * unitSize;
-  for (let part of snake) {    
+  for (let part of snake) {
     if (apple.x === part.x && apple.y === part.y) {
-      newApple()
-      break
+      newApple();
+      break;
     }
   }
 }
@@ -95,19 +101,47 @@ function drawSnake() {
     ctx.fillRect(snakePart.x, snakePart.y, unitSize, unitSize);
   }
 }
+function takeHighScoreFromCookie(newHighScore) {
+  let cookiesStr = document.cookie;
+  let cookiesArr = cookiesStr.split("; ");
+  let cookiesNameAndValue = [];
+  for (let cookie of cookiesArr) {
+    cookie = cookie.split("=");
+    cookiesNameAndValue = [...cookiesNameAndValue, ...cookie];
+  }
+  let highScore =
+    parseInt(
+      cookiesNameAndValue[cookiesNameAndValue.indexOf("highscore") + 1]
+    ) ?? 0;
+  console.log(highScore);
+  let highScoreElement = document.getElementById("highScore");
+  if (newHighScore) {
+    highScoreElement.innerText = newHighScore;
+    document.cookie = `highscore=${newHighScore}`;
+  } else if (highScore) {
+    highScoreElement.innerText =
+      cookiesNameAndValue[cookiesNameAndValue.indexOf("highscore") + 1];
+  } else {
+    document.cookie = `highscore=${score}`;
+    highScoreElement.innerText = score
+  }
+  return parseInt(highScore) ?? 0;
+}
+function setHighScore() {
+  if (score > highScore) {
+    console.log(score);
+    takeHighScoreFromCookie(score);
+  }
+}
 function moveSnake() {
-  isGameOver();
-
-  if (gameStop === false) {
-    const head = { x: snake[0].x + xVelocity, y: snake[0].y + yVelocity };
-    snake.unshift(head);
-    if (head.x === apple.x && head.y === apple.y) {
-      newApple(); // xndzor kerav score mecacav
-      score++;
-      scoreElement.innerText = score;
-    } else {
-      snake.pop();
-    }
+  const head = { x: snake[0].x + xVelocity, y: snake[0].y + yVelocity };
+  snake.unshift(head);
+  if (head.x === apple.x && head.y === apple.y) {
+    newApple(); // xndzor kerav score mecacav
+    score++;
+    scoreElement.innerText = score;
+  } else {
+    snake.pop();
   }
   drawSnake();
 }
