@@ -6,7 +6,10 @@ let highScore = takeHighScoreFromCookie();
 let scoreElement = document.getElementById("liveScore");
 let resetButton = document.getElementById("resetButton");
 let gameOverElement = document.getElementById("gameOver");
+let secondsElement = document.getElementById("seconds")
+let secondsPlayed = 0;
 scoreElement.innerText = score;
+secondsElement.innerHTML = secondsPlayed
 const unitSize = 25;
 let bordWidth = canvas.width;
 let bordHeight = canvas.height;
@@ -33,7 +36,6 @@ nextTick(timeout);
 function nextTick(timeout = 150) {
   isGameOver();
   setHighScore();
-
   if (!gameStop) {
     tick = setTimeout(() => {
       drawBoardGrid();
@@ -42,6 +44,20 @@ function nextTick(timeout = 150) {
       directionChanged = false;
       nextTick(timeout);
     }, timeout);
+  }
+}
+
+let secondsTick
+secondCounter();
+function secondCounter() {
+  if (gameStop === false) {
+    secondsTick = setTimeout(() => {
+      secondsPlayed++
+      secondsElement.innerHTML = secondsPlayed
+      secondCounter();
+    }, 1000);
+  } else {
+    clearTimeout(secondsTick);
   }
 }
 function keyPressHandler(event) {
@@ -113,7 +129,6 @@ function takeHighScoreFromCookie(newHighScore) {
     parseInt(
       cookiesNameAndValue[cookiesNameAndValue.indexOf("highscore") + 1]
     ) ?? 0;
-  console.log(highScore);
   let highScoreElement = document.getElementById("highScore");
   if (newHighScore) {
     highScoreElement.innerText = newHighScore;
@@ -178,6 +193,9 @@ function resetGame() {
   yVelocity = 0;
   gameStop = false;
   gameOverElement.style.display = "none";
+  secondsPlayed = 0;
+  secondsElement.innerHTML = secondsPlayed
+  secondCounter()
   clearTimeout(tick);
   nextTick(timeout);
 }
