@@ -5,6 +5,7 @@ body {
     text-align: center;
     height: 95vh;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 #snake {
@@ -128,5 +129,5 @@ body {
   height: 70vh;
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
