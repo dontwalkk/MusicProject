@@ -41,28 +41,33 @@ function init() {
   secondCounter();
 }
 
-function nextTick(timeout = 150) {
+async function nextTick(timeout = 150) {
   isGameOver();
   setHighScore();
   if (!gameStop) {
-    tick = setTimeout(() => {
-      drawBoardGrid();
-      drawApple();
-      moveSnake();
-      directionChanged = false;
-      nextTick(timeout);
-    }, timeout);
+    await new Promise(resolve => {
+      tick = setTimeout(() => {
+        drawBoardGrid();
+        drawApple();
+        moveSnake();
+        directionChanged = false;
+        resolve();
+      }, timeout);
+    });
+    nextTick(timeout);
   }
 }
 
-
-function secondCounter() {
+async function secondCounter() {
   if (gameStop === false) {
-    secondsTick = setTimeout(() => {
-      secondsPlayed++
-      secondsElement.innerHTML = secondsPlayed
-      secondCounter();
-    }, 1000);
+    await new Promise(resolve => {
+      secondsTick = setTimeout(() => {
+        secondsPlayed++;
+        secondsElement.innerHTML = secondsPlayed;
+        resolve();
+      }, 1000);
+    });
+    secondCounter();
   } else {
     clearTimeout(secondsTick);
   }
